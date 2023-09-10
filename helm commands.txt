@@ -1,0 +1,111 @@
+Certainly, here are some commonly used Helm commands:
+
+1. **Install a Helm Chart:**
+   
+   ```
+   helm install <release-name> <chart-name>
+   ```
+
+2. **Install a Helm Chart with custom values:**
+   
+   ```
+   helm install <release-name> <chart-name> -f values.yaml
+   ```
+
+3. **Upgrade a Helm Release:**
+   
+   ```
+   helm upgrade <release-name> <chart-name>
+   ```
+
+4. **Upgrade a Helm Release with custom values:**
+   
+   ```
+   helm upgrade <release-name> <chart-name> -f values.yaml
+   ```
+
+5. **List Helm Releases:**
+   
+   ```
+   helm list
+   ```
+
+6. **Uninstall a Helm Release:**
+   
+   ```
+   helm uninstall <release-name>
+   ```
+
+7. **Fetch Helm Chart Dependencies:**
+   
+   ```
+   helm dependency update <chart-directory>
+   ```
+
+8. **Create a New Helm Chart:**
+   
+   ```
+   helm create <chart-name>
+   ```
+
+9. **Search for Helm Charts in Repositories:**
+   
+   ```
+   helm search repo <chart-name>
+   ```
+
+10. **Package a Helm Chart:**
+   
+    ```
+    helm package <chart-directory>
+    ```
+
+11. **Add a Helm Chart Repository:**
+    
+    ```
+    helm repo add <repo-name> <repository-url>
+    ```
+
+12. **Update Helm Repositories:**
+    
+    ```
+    helm repo update
+    ```
+
+13. **Inspect a Helm Release:**
+    
+    ```
+    helm get values <release-name>
+    ```
+
+14. **Rollback a Helm Release:**
+    
+    ```
+    helm rollback <release-name> <revision>
+    ```
+
+15. **Generate Kubernetes manifest files from a Helm Chart:**
+    
+    ```
+    helm template <release-name> <chart-name>
+    ```
+
+16. **Inspect the details of a Helm Chart:**
+    
+    ```
+    helm show chart <chart-name>
+    ```
+
+17. **Inspect the README of a Helm Chart:**
+    
+    ```
+    helm show readme <chart-name>
+    ```
+
+18. **Lint a Helm Chart for errors:**
+    
+    ```
+    helm lint <chart-directory>
+    ```
+
+These are just a selection of commonly used Helm commands. Be sure to refer to the official Helm documentation for a complete list of commands and their detailed usage.

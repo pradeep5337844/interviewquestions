@@ -1,0 +1,123 @@
+Certainly, here are some commonly used Docker commands:
+
+1. **Build a Docker Image:**
+
+   ```
+   docker build -t <image-name> <path-to-dockerfile>
+   ```
+
+2. **Run a Docker Container:**
+
+   ```
+   docker run -d --name <container-name> <image-name>
+   ```
+
+3. **Run a Docker Container Interactively:**
+
+   ```
+   docker run -it --name <container-name> <image-name> /bin/bash
+   ```
+
+4. **List Running Containers:**
+
+   ```
+   docker ps
+   ```
+
+5. **List All Containers (Including Exited Ones):**
+
+   ```
+   docker ps -a
+   ```
+
+6. **Stop a Running Container:**
+
+   ```
+   docker stop <container-name or container-id>
+   ```
+
+7. **Start a Stopped Container:**
+
+   ```
+   docker start <container-name or container-id>
+   ```
+
+8. **Remove a Container:**
+
+   ```
+   docker rm <container-name or container-id>
+   ```
+
+9. **List Docker Images:**
+
+   ```
+   docker images
+   ```
+
+10. **Remove a Docker Image:**
+
+    ```
+    docker rmi <image-name or image-id>
+    ```
+
+11. **Pull a Docker Image from Docker Hub:**
+
+    ```
+    docker pull <image-name>
+    ```
+
+12. **Inspect a Docker Container:**
+
+    ```
+    docker inspect <container-name or container-id>
+    ```
+
+13. **Inspect a Docker Image:**
+
+    ```
+    docker inspect <image-name or image-id>
+    ```
+
+14. **View Logs of a Container:**
+
+    ```
+    docker logs <container-name or container-id>
+    ```
+
+15. **Execute a Command in a Running Container:**
+
+    ```
+    docker exec -it <container-name or container-id> <command>
+    ```
+
+16. **Copy Files to/from a Container:**
+
+    ```
+    docker cp <local-path> <container-name or container-id>:<container-path>
+    ```
+
+17. **Prune Unused Resources:**
+
+    ```
+    docker system prune
+    ```
+
+18. **View Docker Disk Usage:**
+
+    ```
+    docker system df
+    ```
+
+19. **Create a Docker Network:**
+
+    ```
+    docker network create <network-name>
+    ```
+
+20. **Run a Container in a Specific Network:**
+
+    ```
+    docker run -d --name <container-name> --network <network-name> <image-name>
+    ```
+
+These are some commonly used Docker commands. Refer to the official Docker documentation for a comprehensive list of commands and their detailed usage.

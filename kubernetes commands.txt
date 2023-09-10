@@ -1,0 +1,123 @@
+Certainly, here are some commonly used Kubernetes commands:
+
+1. **Create a Resource:**
+
+   ```
+   kubectl create <resource-type> <resource-name> --<flag> <value>
+   ```
+
+2. **Apply Configuration from a File:**
+
+   ```
+   kubectl apply -f <file.yaml>
+   ```
+
+3. **List Resources:**
+
+   ```
+   kubectl get <resource-type>
+   ```
+
+4. **Get Detailed Information about a Resource:**
+
+   ```
+   kubectl describe <resource-type> <resource-name>
+   ```
+
+5. **View Logs of a Pod:**
+
+   ```
+   kubectl logs <pod-name>
+   ```
+
+6. **Execute a Command in a Pod:**
+
+   ```
+   kubectl exec -it <pod-name> -- <command>
+   ```
+
+7. **Port Forward to a Pod:**
+
+   ```
+   kubectl port-forward <pod-name> <local-port>:<remote-port>
+   ```
+
+8. **Delete a Resource:**
+
+   ```
+   kubectl delete <resource-type> <resource-name>
+   ```
+
+9. **Scale a Deployment:**
+
+   ```
+   kubectl scale deployment <deployment-name> --replicas=<desired-replicas>
+   ```
+
+10. **Create or Replace Resources:**
+
+    ```
+    kubectl apply -f <file.yaml>
+    ```
+
+11. **Edit a Resource:**
+
+    ```
+    kubectl edit <resource-type> <resource-name>
+    ```
+
+12. **Get All Resources in a Namespace:**
+
+    ```
+    kubectl get all -n <namespace>
+    ```
+
+13. **Describe a Node:**
+
+    ```
+    kubectl describe node <node-name>
+    ```
+
+14. **Create a Namespace:**
+
+    ```
+    kubectl create namespace <namespace-name>
+    ```
+
+15. **Set Context for kubectl:**
+
+    ```
+    kubectl config use-context <context-name>
+    ```
+
+16. **Get List of Namespaces:**
+
+    ```
+    kubectl get namespaces
+    ```
+
+17. **Create a ConfigMap:**
+
+    ```
+    kubectl create configmap <configmap-name> --from-file=<file-path>
+    ```
+
+18. **Get Events for a Resource:**
+
+    ```
+    kubectl get events
+    ```
+
+19. **Run a Temporary Pod for Troubleshooting:**
+
+    ```
+    kubectl run -it --rm --restart=Never <pod-name> --image=<image-name> -- <command>
+    ```
+
+20. **View API Resources:**
+
+    ```
+    kubectl api-resources
+    ```
+
+These are just a selection of commonly used Kubernetes commands. Be sure to refer to the official Kubernetes documentation for a comprehensive list of commands and their detailed usage.
